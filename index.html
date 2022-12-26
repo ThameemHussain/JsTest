@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+       <label for="Artist">Artist:</label> <input type="textbox" id="Artist" ><br></br>
+       <label for="Title">Title:</label> <input type="textbox" id="Title" ><br></br>
+       <label for="ReleaseYear">ReleaseYear:</label> <input type="date" id="ReleaseYear" ><br></br>
+       <label for="Format">Formats:</label><div id="Format" >   <label for="Formats">CD:</label> <input type="checkbox" id="Formats" >
+        <label for="Casette">Casette:</label> <input type="checkbox" id="Casette" >
+        <label for="LP">LP:</label> <input type="checkbox" id="LP" ><br></br>
+    </div>
+    <label for="rad">Gold:</label> <input type="radio" id="rad" ><br></br>
+    <br>
+    <button id="btn" type="button"onclick="myFunc()" >Submit</button>
+    </form>
+
+    <p id="Printer"></p>
+    <table Border="1px solid black">
+       <thead id="Head"> <tr>
+            <th>Submission</th>
+            <th>Artist</th>
+            <th>Title</th>
+            <th>Release Year</th>
+            <th>Format</th>
+            <th id="gold">Gold</th>
+        </tr></thead>
+        <tbody id="tableBody">
+        </tbody>
+    </table>
+    <script src="./page.js"></script>
+</body>
+</html>
